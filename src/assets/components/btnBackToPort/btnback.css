@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text-Color: #EFF6EE;
+    --font-: 'Karla', sans-serif;
+    --backgroundcolorDark-: #092327;
+}
+.backPortfolio {
+    font-family: var(--font-);
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-Color);
+    position: absolute;
+    display: inline-block;
+    top: 5vh;
+    left: 5vw;
+}
+
+.backPortfolio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; 
+    height: 2px; 
+    background-color: #00A9A5; 
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.backPortfolio:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+    color: #00A9A5;
+}
+
+.backPortfolio:hover {
+    color: #00A9A5;
+}

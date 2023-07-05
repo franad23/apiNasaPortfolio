@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-Color: #EFF6EE;
+  --font-: 'Karla', sans-serif;
+  --backgroundcolorDark-: #092327;
+}
+.apiNasaMainContainer{
+  background-color: var(--backgroundcolorDark-);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dataApiContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  margin: 10vh 0 10vh 0; 
+  
+}
+.imgApi {
+  width: 80%;
+}
+.infoApiContainer {
+  color: var(--text-Color);
+  font-family: var(--font-);
+}
+.descriptionApi{
+  padding: 1%;
+}
+.titleApi {
+  margin: 2% 0 2% 0;
+}
+
+@media (max-width: 425px) { 
+  .dataApiContainer {
+    width: 90%;
+  }
+
+}

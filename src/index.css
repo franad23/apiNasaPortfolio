@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text-Color: #eff6ee;
+    --font-: "Karla", sans-serif;
+    --backgroundcolorDark-: #092327;
+    background-color: var(--backgroundcolorDark-);
+}
+
+#root {
+    background-color: var(--backgroundcolorDark-);
+}
